@@ -10,7 +10,8 @@ services:
       - "8443:443"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
-      - ASPNETCORE_URLS=http://+:80;https://+:443
+      - ASPNETCORE_URLS=http://+:80
+      - DOTNET_RUNNING_IN_CONTAINER=true
     restart: unless-stopped
     networks:
       - portfolio-network

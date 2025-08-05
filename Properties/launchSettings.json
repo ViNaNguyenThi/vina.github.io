@@ -27,6 +27,16 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "Docker": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:80",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "ASPNETCORE_URLS": "http://+:80"
+      }
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,

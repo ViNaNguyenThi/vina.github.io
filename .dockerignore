@@ -6,6 +6,7 @@
 # Docker
 Dockerfile
 .dockerignore
+docker-compose.yml
 
 # Build results
 [Dd]ebug/

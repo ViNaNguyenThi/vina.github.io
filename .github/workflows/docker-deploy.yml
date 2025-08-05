@@ -22,9 +22,10 @@ jobs:
 
     - name: Test Docker image
       run: |
+        echo "Starting container..."
         docker run --rm -d --name portfolio-test -p 8080:80 portfolio-app
         echo "Waiting for application to start..."
-        sleep 30
+        sleep 45
         echo "Testing application..."
         curl -f http://localhost:8080 || (echo "Application test failed" && docker logs portfolio-test && exit 1)
         echo "Application test successful"
